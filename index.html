@@ -3,17 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#161514" media="(prefers-color-scheme: dark)" />
     <title>Abdullah Raja — Developer &amp; Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header>
+      <p>
+        Abdullah Raja<br />
+        <small>Developer &amp; Designer</small>
+      </p>
+      <p><small>Dubai<time id="local-time"></time></small></p>
+    </header>
+
     <main>
-      <section class="intro" aria-labelledby="name">
-        <h1 id="name">Abdullah Raja</h1>
-        <p class="bio">
-            I'm a software developer and designer, obsessed with building products that delight people. I’m deeply interested in the space where technology and design meet – and how they can come together to create functional, beautiful, effortless, and innovative experiences.
-        </p> 
+      <section class="intro">
+        <p>
+          I'm a software developer and designer, obsessed with building products that delight people. I’m deeply interested in the space where technology and design meet – and how they can come together to create functional, beautiful, effortless, and innovative experiences.
+        </p>
+
+        <ul class="links">
+          <li>
+            <a class="external" href="mailto:you@example.com" aria-keyshortcuts="E">Email<kbd aria-hidden="true">E</kbd></a>
+          </li>
+          <li>
+            <a class="external" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-keyshortcuts="G">GitHub<kbd aria-hidden="true">G</kbd></a>
+          </li>
+          <li>
+            <a class="external" href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-keyshortcuts="L">LinkedIn<kbd aria-hidden="true">L</kbd></a>
+          </li>
+          <li>
+            <a class="external" href="resume.pdf" target="_blank" rel="noopener noreferrer" aria-keyshortcuts="R">Resume<kbd aria-hidden="true">R</kbd></a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cv">
+        <h2>Work</h2>
+        <ul>
+          <li class="project">
+            <div class="shot">
+              <img src="images/medic-launch.avif" alt="Medic Launch student dashboard" width="1000" height="586" loading="lazy" decoding="async" />
+            </div>
+            <p>
+              <b><a class="external" href="https://mediclaunch.com" target="_blank" rel="noopener noreferrer">Medic Launch</a></b>
+              Medical exam prep platform, built and launched with a doctor and medical educator. I worked across the stack and with the CEO on the roadmap – including AI-assisted authoring tools that cut content creation from weeks to days.
+            </p>
+          </li>
+          <li class="project">
+            <div class="shot">
+              <img class="closer" src="images/flote.avif" alt="Flote candidate interview summary" width="900" height="514" loading="lazy" decoding="async" />
+            </div>
+            <p>
+              <b><a class="external" href="https://flote.cc" target="_blank" rel="noopener noreferrer">Flote</a></b>
+              Automated screening interviews for lean startup teams. Flote’s AI conducts structured voice interviews with every applicant and delivers scored, verifiable results so teams can identify candidates who actually have the skills they need.
+            </p>
+          </li>
+        </ul>
       </section>
     </main>
+
+    <script src="clock.js"></script>
+    <script src="shortcuts.js"></script>
   </body>
 </html>
